@@ -10,6 +10,33 @@ let loadImages = (query) => {
     .then(response => response.json())
     .then(data =>{
         console.log(data)
+        let cards = document.getElementsByClassName("card")[0]
+
+        cards.innerHTML = ""
+        
+        let img = document.createElement("img") 
+
+        img.innerHTML = `<div class="card">
+        <img src="${data.photos}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p> 
+        </div>
+    </div>`
+cards.appendChild(img)
+
+
+          /* for(let i=0; i< cards.length;i++){
+         cards[i].innerHtml=""
+        
+
+        
+         img.src = data.photos[i].src.medium
+
+         console.log(img.src)
+         cards[i].appenChild(img) 
+        } */
+        
     })
 }
 
