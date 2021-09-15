@@ -12,7 +12,7 @@ let loadImages = (query) => {
         console.log(data)
         let cards = document.getElementsByClassName("card")[0]
 
-        cards.innerHTML = ""
+        
         
         let img = document.createElement("img") 
 
