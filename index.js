@@ -12,17 +12,31 @@ let loadImages = (query) => {
         console.log(data)
         let cards = document.getElementsByClassName("card")[0]
 
+        // select your main .row 
+
+        // row.innerHTML = ''
+
+        // for (let photo of data.photos)
+        // row.innerHTML +- `<card-html>`
+
+        // for (let i = 0; i < data.photos.length; i++) {
+        //  const photo = data.photos[i]
+
+        //}
+
         
         
         let img = document.createElement("img") 
 
-        img.innerHTML = `<div class="card">
-        <img src="${data.photos}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p> 
+        img.innerHTML = `
+        <div class="card">
+            <img src="${data.photo}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p> 
+            </div>
         </div>
-    </div>`
+    `
 cards.appendChild(img)
 
 

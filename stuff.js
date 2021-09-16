@@ -90,3 +90,10 @@ album.appendChild(col)
                         `
 
                     row.appendChild(col)
+
+
+
+                add = () => {
+                    console.log("rashmi")
+                }
+
